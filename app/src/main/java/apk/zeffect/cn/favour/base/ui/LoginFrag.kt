@@ -5,6 +5,7 @@ import android.support.v4.app.DialogFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import apk.zeffect.cn.favour.R
 
 
 /**
@@ -12,6 +13,6 @@ import android.view.ViewGroup
  */
 class LoginFrag : DialogFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return inflater.inflate(R.layout.dialog_login, container, false)
     }
 }
