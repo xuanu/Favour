@@ -55,4 +55,5 @@ dependencies {
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35'
     implementation 'com.zhy:autolayout:1.4.5'
     implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+    implementation 'com.sdsmdg.harjot:materialshadows:1.2.5'
 }

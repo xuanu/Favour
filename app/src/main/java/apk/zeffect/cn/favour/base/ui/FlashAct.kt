@@ -44,7 +44,6 @@ class FlashAct : BaseActivity() {
      *
      */
     private fun isLogin(): Boolean {
-        return true
         //有无验证码
         val authCode = SpUtils.getString(mContext, Constant.Sp.AUTH_CODE)
         if (authCode?.isNullOrBlank() != false) return false
@@ -67,7 +66,7 @@ class FlashAct : BaseActivity() {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    private fun loginResult(msgModel: MsgModel) {
+    fun loginResult(msgModel: MsgModel) {
         if (msgModel.model == MsgModel.models.loginEvt) {
 
         }
